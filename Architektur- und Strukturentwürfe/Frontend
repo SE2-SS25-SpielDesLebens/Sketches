@@ -1,0 +1,43 @@
+sdlapp/
+├── MainActivity.kt                      # ggf. nur Einstiegspunkt
+├── StartActivity.kt                     # Startbildschirm (Spielername, Button)
+├── GameActivity.kt                      # Hauptspiel-UI
+├── SettingsActivity.kt                  # Einstellungen
+│
+├── model/                               # Datenklassen (DTOs + Spielzustand)
+│   ├── StompMessage.kt
+│   ├── OutputMessage.kt
+│   ├── Spieler.kt
+│   ├── Job.kt
+│   ├── Aktionskarte.kt
+│   ├── GameSession.kt
+│   ├── SpielStatus.kt
+│   └── Feld.kt
+│
+├── network/                             # Netzwerk/WebSocket-Client
+│   ├── MyStomp.kt
+│   └── NetworkManager.kt (optional)
+│
+├── ui/                                  # Views, UI-Komponenten
+│   ├── adapter/
+│   │   └── SpielerListeAdapter.kt       # z. B. RecyclerView für Spieler
+│   ├── fragment/
+│   │   └── GameBoardFragment.kt         # Spielbrett als Fragment
+│   └── components/
+│       └── SpielerTokenView.kt          # eigene View für Spielfigur
+│
+├── util/                                # Hilfsfunktionen & UI-Utils
+│   ├── Extensions.kt
+│   └── UiHelper.kt
+│
+├── res/
+│   ├── layout/
+│   │   ├── activity_start.xml
+│   │   ├── activity_game.xml
+│   │   ├── activity_settings.xml
+│   │   └── spieler_item.xml
+│   ├── drawable/
+│   ├── values/
+│   └── raw/
+│
+└── Callbacks.kt                         # Interface zur Kommunikation

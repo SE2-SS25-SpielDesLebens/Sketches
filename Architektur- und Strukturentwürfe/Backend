@@ -1,0 +1,32 @@
+websocketserver/
+├── WebSocketServerApplication.java      # Main-Klasse
+│
+├── config/                              # Konfiguration (WebSocket etc.)
+│   └── WebSocketBrokerConfig.java
+│
+├── controller/                          # REST/WebSocket Controller
+│   ├── WebSocketBrokerController.java
+│   └── GameController.java              # z.B. Spiel starten, debuggen etc.
+│
+├── model/                               # Domänenmodell (Business Layer)
+│   ├── Spieler.java
+│   ├── Job.java
+│   ├── Aktionskarte.java
+│   ├── Spielbrett.java
+│   ├── Feld.java
+│   ├── SpielStatus.java                 # Enum: LOBBY, LAUFEND, BEENDET
+│   └── GameSession.java
+│
+├── service/                             # Spiellogik, Regeln, Verarbeitung
+│   ├── GameService.java
+│   ├── KartenService.java
+│   ├── JobService.java
+│   └── CheatDetectionService.java       # Schummelprüfung
+│
+├── messaging/                           # Datenobjekte für WS-Kommunikation
+│   └── dtos/
+│       ├── StompMessage.java
+│       └── OutputMessage.java
+│
+└── util/                                # Hilfsklassen, z. B. Logger, Mapper
+    └── GameUtil.java
