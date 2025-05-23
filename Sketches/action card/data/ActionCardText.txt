@@ -592,6 +592,6 @@ Wähle EINE Aktion aus:
 A. Verkaufe ihn und kassiere 50.000 
 von der Bank.
 
-B.Verwandle ihn in eine 
+B. Verwandle ihn in eine 
 Arbeitnehmergesellschaft und kassiere von 
 jedem Spieler 20.000.
